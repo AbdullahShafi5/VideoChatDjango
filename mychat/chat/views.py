@@ -33,20 +33,23 @@ def getToken(request):
 @csrf_exempt
 def createMember(request):
     data = json.loads(request.body)
-    member ,created = RoomMember.objects.get_or_create(
-        name= data['name'],
-        uid = data['UID'],
-        room_name =data['room_name']
+    member, created = RoomMember.objects.get_or_create(
+        name=data['name'],
+        uid=data['UID'],
+        room_name=data['room_name']
     )
-    return JsonResponse({'name':data['name']},safe=False)
+
+    return JsonResponse({'name':data['name']}, safe=False)
+
 
 def getMember(request):
     uid = request.GET.get('UID')
-    room_name = request.GET.get('uid')
+    room_name = request.GET.get('room_name')
+
     member = RoomMember.objects.get(
-        uid= uid,
-        room_name = room_name,
-    )   
+        uid=uid,
+        room_name=room_name,
+    )
     name = member.name
     return JsonResponse({'name':member.name}, safe=False)
 
@@ -54,10 +57,9 @@ def getMember(request):
 def deleteMember(request):
     data = json.loads(request.body)
     member = RoomMember.objects.get(
-        name= data['name'],
-        uid= data['UID'],
-        room_name =data['room_name'],
+        name=data['name'],
+        uid=data['UID'],
+        room_name=data['room_name']
     )
     member.delete()
-    
-    return JsonResponse('Member was deleted',safe=False)
+    return JsonResponse('Member deleted', safe=False)
