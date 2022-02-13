@@ -9,9 +9,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+_mmjkqlvmde46o(h+y=zsbnb6s_my7o$ee8qbrs8z++necjir'
 
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['demonchat.herokuapp.com','127.0.0.1']
 
 
 INSTALLED_APPS = [
