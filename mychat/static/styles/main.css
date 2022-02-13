@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root{
+    --shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+}
+body{
+    background-color: rgb(232, 233, 239,1);
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'lora', serif;
+}
+#logo{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#form-container{
+    width: 400px;
+    box-shadow:var(--shaddow);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    margin: auto;
+
+   
+}
+
+
+#video-streams{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50vh;
+    width: 50%;
+    margin:0 auto;
+}
+
+.video-player{
+    height: 100%;
+    width: 100%;
+}
+
+
+#welcome-message{
+    text-align: center;
+    margin:20px ;
+}
+#welcome-message h1{
+    font-size: 36px;
+}
+#welcome-message p{
+    font-size: 20px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-field{
+    margin: 10px;
+}
+.form-field label{
+    font-size: 16px;
+    line-height: 1.7em;
+}
+.form-field input{
+   
+    border: 2px solid rgb(31, 29, 34);
+    border-radius:5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.video-player>*{
+    border-radius: 5px;
+}
+
+@media screen and (max-width:450px) {
+    #form-container{
+        width: 95%;
+
+    }
+    #welcome-message h1{
+        font-size: 24px;
+    }
+}
+@media screen and(max-width:1650px){
+    .video-container{
+        flex-basis: 300px;
+        min-height: 200px;
+
+    }
+    
+}
+#form-field-input{
+    border: none;
+}
+#form-field-input:hover{
+    color : white;
+    background-color:rgb(187, 45, 45);
+    transform: scaleX(1);
+    transition: ease-in .101s;
+}
+.username-wrapper{
+    position: absolute;   
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+}
