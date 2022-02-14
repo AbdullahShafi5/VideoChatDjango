@@ -1,6 +1,5 @@
 const APP_ID = 'f6830721f8294c67b8e64329157f1576'
 const CHANNEL = sessionStorage.getItem('room')
-//generate newtoken in every 24 hour
 const TOKEN = sessionStorage.getItem('token')
 let UID = Number(sessionStorage.getItem('UID'))
 let NAME =  sessionStorage.getItem('name')
@@ -75,7 +74,7 @@ let leaveAndRemoveLocalStream = async () => {
     }
 
     await client.leave()
-    //This is somewhat of an issue because if user leaves without actaull pressing leave button, it will not trigger
+   
     deleteMember() 
     window.open('/', '_self')
 }
