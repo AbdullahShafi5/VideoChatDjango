@@ -10,7 +10,7 @@ body{
 }
 #logo{
     display: block;
-    width: 100px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -44,9 +44,10 @@ body{
 #welcome-message{
     text-align: center;
     margin:20px ;
+    margin-top: -108px;
 }
 #welcome-message h1{
-    font-size: 36px;
+    font-size: 31px;
 }
 #welcome-message p{
     font-size: 20px;
@@ -111,4 +112,10 @@ body{
     border-radius: 5px;
     font-size: 14px;
     color: #fff;
+}
+
+@media screen and (max-width:328px) {
+    #welcome-message{
+        margin-top: -94px;
+    }
 }
