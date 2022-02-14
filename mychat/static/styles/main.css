@@ -8,6 +8,11 @@ body{
     /* font-family: 'Dancing Script', cursive; */
     font-family: 'lora', serif;
 }
+#main-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 #logo{
     display: block;
     width: 100%;
@@ -65,11 +70,12 @@ body{
     line-height: 1.7em;
 }
 .form-field input{
-   
-    border: 2px solid rgb(31, 29, 34);
-    border-radius:5px;
-    padding: 10px;
-    box-sizing: border-box;
+   min-width: 228px;
+   text-align: center;
+   border: 2px solid rgb(31, 29, 34);
+   border-radius:5px;
+   padding: 10px;
+   box-sizing: border-box;
 }
 
 .video-player>*{
@@ -98,7 +104,7 @@ body{
 }
 #form-field-input:hover{
     color : white;
-    background-color:rgb(187, 45, 45);
+    background-color:rgb(5, 176, 255);
     transform: scaleX(1);
     transition: ease-in .101s;
 }
@@ -114,8 +120,20 @@ body{
     color: #fff;
 }
 
+
 @media screen and (max-width:328px) {
     #welcome-message{
         margin-top: -94px;
     }
+}
+
+
+@media screen and (max-width:291px) {
+    #logo{
+        margin-bottom: 30px;
+    }
+}
+
+.field-input-submit{
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
 }
