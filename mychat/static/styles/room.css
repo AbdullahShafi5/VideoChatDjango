@@ -15,10 +15,10 @@ body{
     position: relative;
 }
 
-/* .video-player{
+.video-player{
     height: 100%;
     width: 100%;
-} */
+}
 
 #controls-wrapper{
     display: flex;
@@ -46,4 +46,49 @@ body{
 
 #leave-btn{
     background-color: rgb(255,88,80,1);
+}
+
+.agora_video_player{
+    transform: none!important;
+    object-fit: contain!important;
+}
+
+
+#video-streams{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* flex-wrap: wrap; */
+    height: 50vh;
+    width: 50%;
+    margin:0 auto;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1415px) {
+    #video-streams{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        width: 100%;
+    } 
+    .video-container{
+        border: none!important;
+    }
+}
+@media only screen and (max-width: 537px) {
+    #video-streams{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+        width: 100%;
+    }
+    .video-container{
+        min-height: auto;
+    }
+}
+
+@media only screen and (max-width: 615px) and (min-width:538px ){
+    #video-streams{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))!important;
+        width: 100%;
+    } 
 }

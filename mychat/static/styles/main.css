@@ -31,20 +31,6 @@ body{
 }
 
 
-#video-streams{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 50vh;
-    width: 50%;
-    margin:0 auto;
-}
-
-.video-player{
-    height: 100%;
-    width: 100%;
-}
-
 
 #welcome-message{
     text-align: center;
@@ -140,3 +126,10 @@ body{
 .field-input-submit{
     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
 }
+
+@media screen and( min-width:1470px) {
+    #video-streams{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+} 
