@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 :root{
     --shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
 }
@@ -63,6 +63,19 @@ body{
    padding: 10px;
    box-sizing: border-box;
 }
+
+
+
+#damnText{
+    padding-top: 8px;
+    font-size: 1em;
+    font-family:'Courgette', cursive;
+}
+#damnText a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
 
 .video-player>*{
     border-radius: 5px;
