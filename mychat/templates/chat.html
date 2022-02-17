@@ -3,25 +3,31 @@
  {% block content %}
 <main id="main-container">
   <section id="form-container">
-    <img id="logo" src=" {% static 'images/beast.png' %}" />
+    <img id="logo" src=" {% static 'images/video.png' %}" />
     <div id="welcome-message">
-      <h1>Welcome to DEMONCHAT</h1>
-      <p>Chat Face To Face With Your Mate</p>
+      <h1>DEMONCHAT</h1>
+      <div class="name-poem">
+      <p id="p-1-1">Face  To  Face </p>
+      <p>With Your Mate</p>
+      </div>
+      
     </div>
     <form id='form'>
       <div class="form-field">
-        <input type="text" name="room" placeholder="ENTER A ROOM NAME" style="text-transform: uppercase;"/>        
+        <input type="text" name="room" placeholder="ENTER ROOM NAME" style="text-transform: uppercase;"/>        
       </div>
       <div class="form-field">
-        <input type="text" name="name" placeholder="Enter your Name" style="text-transform: uppercase;"/>        
+        <input type="text" name="name" placeholder="ENTER YOUR NAME" style="text-transform: uppercase;"/>        
       </div>
       <div class="form-field field-input-submit">
         <input id="form-field-input" type="submit" value="Join Stream"/>        
       </div>
     </form>
-    <p id="damnText">Made by <a href="https://codingmafia.herokuapp.com/">AbdullaSafi</a> </p>
-  </section>
- 
+    <div class="parent-courtesy">
+    <p id="damnText">Made by </p>
+    <p id="dancing-courtesy"><a  href="https://codingmafia.herokuapp.com/">AbdullaSafi</a></p>
+  </div>
+  </section> 
 </main>
 
 <script type="text/javascript">
