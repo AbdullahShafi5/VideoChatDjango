@@ -31,14 +31,15 @@ body{
 
 #welcome-message{
     text-align: center;
-    margin-top:65px;
+    margin-top:51px;
    
 }
 #welcome-message h1{
     font-size: 31px;
 }
 #welcome-message p{
-    font-size: 20px;
+    margin-top: 12px;
+    font-size: 19px;
 }
 #form{
     display: flex;
@@ -147,7 +148,7 @@ body{
 }
 #dancing-courtesy{
     font-size: 20px;
-    margin-top: -12px;    
+    margin-top: -20px;
 }
 #dancing-courtesy a{    
     color:rgb(60, 135, 248);
